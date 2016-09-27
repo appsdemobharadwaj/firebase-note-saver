@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Note Saver</title>
+  <title>Show Notes</title>
   <!-- Latest compiled and minified CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <style type="text/css">
@@ -22,18 +22,9 @@
     <hr/>
     <div class="row">
       <div class="col-md-12">
-        <form method="post" name="noteForm">
-          <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" required placeholder="Enter Note Title">
-          </div>
-          <div class="form-group">
-            <label for="content">Content</label>
-			​<textarea id="content" class="form-control" rows="10" cols="70" required placeholder="Enter Note Content"></textarea>
-          </div>
-        
-          <button type="submit" class="btn btn-primary addNode">Submit</button>
-        </form>
+        <ul id="notes" class="list-group">
+
+        </ul>
       </div>
     </div>
   </div>
@@ -46,6 +37,6 @@
   <!-- Include Firebase Library -->
   <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
   <!-- Contacts Store JavaScript -->
-  <script src="noteApp.js"></script>
+  <script src="showNotesController.js"></script>
 </body>
 </html>
